@@ -3,6 +3,10 @@
         "apps": [],
         "details": [
             {
+                "appID": "V2MFYEM3KM.de.maxdome.onboard",
+                "paths": [ "/play" ]
+            },
+            {
                 "appID": "Q6DF56GAFU.de.maxdome.onboard.qa",
                 "paths": [ "/play" ]
             }
