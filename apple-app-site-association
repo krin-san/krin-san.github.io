@@ -1,0 +1,11 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "Q6DF56GAFU.de.maxdome.onboard.qa",
+                "paths": [ "/play" ]
+            }
+        ]
+    }
+}
