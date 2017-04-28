@@ -1,7 +1,106 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+<ul>
+<li><a href="https://www-t01.maxdome-onboard.video/play?customerId=7012341490623787001&orderId=8012341492065131001&hostDomain=https://skidbladnir-t01.maxdome-onboard.de/api/v1/&hostTracking=https://hermud-t01.maxdome-onboard.de/&returnURL=https://www-t01.maxdome-onboard.video/gratis/detail/2372857/">HREF: t01 maxdome-onboard /play page</a></li>
+<li><a href="https://maxdome-onboard.video/play?customerId=7012341490623787001&orderId=8012341492065131001&hostDomain=https://skidbladnir-t01.maxdome-onboard.de/api/v1/&hostTracking=https://hermud-t01.maxdome-onboard.de/&returnURL=https://www-t01.maxdome-onboard.video/gratis/detail/2372857/">HREF: maxdome-onboard /play page</a></li>
+<li><a href="https://krin-san.github.io/play">HREF: local /play page</a></li>
+<li><a href="https://krin-san.github.io/delegation">HREF: local /delegation page</a></li>
+</br>
+
+<li><a href="#" id="location">SYNC: t01 via window.location</a></li>
+<li><a href="#" id="location_async">ASYNC: t01 via window.location</a></li>
+
+<li><a href="#" id="replace">SYNC: t01 via window.location.replace</a></li>
+<li><a href="#" id="replace_async">ASYNC: t01 via window.location.replace</a></li>
+
+<li><a href="#" id="assign">SYNC: t01 via window.location.assign</a></li>
+<li><a href="#" id="assign_async">ASYNC: t01 via window.location.assign</a></li>
+
+<li><a href="#" id="href">SYNC: t01 via window.location.href</a></li>
+<li><a href="#" id="href_async">ASYNC: t01 via window.location.href</a></li>
+
+<li><a href="#" id="open">SYNC: t01 via window.location.open</a></li>
+<li><a href="#" id="open_async">ASYNC: t01 via window.location.open</a></li>
+
+</ul>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/superagent/3.5.2/superagent.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<script>
+    document.getElementById('location').addEventListener('click', function () {
+        console.log('Setting window.location...');
+        window.location = 'https://www-t01.maxdome-onboard.video/play?customerId=7012341490623787001&orderId=8012341492065131001&hostDomain=https://skidbladnir-t01.maxdome-onboard.de/api/v1/&hostTracking=https://hermud-t01.maxdome-onboard.de/&returnURL=https://www-t01.maxdome-onboard.video/gratis/detail/2372857/';
+    });
+    document.getElementById('location_async').addEventListener('click', function () {
+        var request = window.superagent;
+        request
+            .get('https://reqres.in/api/products/3')
+            .end(function () {
+                console.log('Setting window.location...');
+                window.location = 'https://www-t01.maxdome-onboard.video/play?customerId=7012341490623787001&orderId=8012341492065131001&hostDomain=https://skidbladnir-t01.maxdome-onboard.de/api/v1/&hostTracking=https://hermud-t01.maxdome-onboard.de/&returnURL=https://www-t01.maxdome-onboard.video/gratis/detail/2372857/'
+            });
+    });
+    
+    document.getElementById('replace').addEventListener('click', function () {
+        console.log('Setting window.location...');
+        window.location.replace('https://www-t01.maxdome-onboard.video/play?customerId=7012341490623787001&orderId=8012341492065131001&hostDomain=https://skidbladnir-t01.maxdome-onboard.de/api/v1/&hostTracking=https://hermud-t01.maxdome-onboard.de/&returnURL=https://www-t01.maxdome-onboard.video/gratis/detail/2372857/');
+    });
+    document.getElementById('replace_async').addEventListener('click', function () {
+        var request = window.superagent;
+        request
+            .get('https://reqres.in/api/products/3')
+            .end(function () {
+                console.log('Setting window.location...');
+                window.location.replace('https://www-t01.maxdome-onboard.video/play?customerId=7012341490623787001&orderId=8012341492065131001&hostDomain=https://skidbladnir-t01.maxdome-onboard.de/api/v1/&hostTracking=https://hermud-t01.maxdome-onboard.de/&returnURL=https://www-t01.maxdome-onboard.video/gratis/detail/2372857/');
+            });
+    });
+    
+    document.getElementById('assign').addEventListener('click', function () {
+        console.log('Setting window.location...');
+        window.location.assign('https://www-t01.maxdome-onboard.video/play?customerId=7012341490623787001&orderId=8012341492065131001&hostDomain=https://skidbladnir-t01.maxdome-onboard.de/api/v1/&hostTracking=https://hermud-t01.maxdome-onboard.de/&returnURL=https://www-t01.maxdome-onboard.video/gratis/detail/2372857/');
+    });
+    document.getElementById('assign_async').addEventListener('click', function () {
+        var request = window.superagent;
+        request
+            .get('https://reqres.in/api/products/3')
+            .end(function () {
+                console.log('Setting window.location...');
+                window.location.assign('https://www-t01.maxdome-onboard.video/play?customerId=7012341490623787001&orderId=8012341492065131001&hostDomain=https://skidbladnir-t01.maxdome-onboard.de/api/v1/&hostTracking=https://hermud-t01.maxdome-onboard.de/&returnURL=https://www-t01.maxdome-onboard.video/gratis/detail/2372857/');
+            });
+    });
+    
+    document.getElementById('href').addEventListener('click', function () {
+        console.log('Setting window.location...');
+        window.location.href = 'https://www-t01.maxdome-onboard.video/play?customerId=7012341490623787001&orderId=8012341492065131001&hostDomain=https://skidbladnir-t01.maxdome-onboard.de/api/v1/&hostTracking=https://hermud-t01.maxdome-onboard.de/&returnURL=https://www-t01.maxdome-onboard.video/gratis/detail/2372857/';
+    });
+    document.getElementById('href_async').addEventListener('click', function () {
+        var request = window.superagent;
+        request
+            .get('https://reqres.in/api/products/3')
+            .end(function () {
+                console.log('Setting window.location...');
+                window.location.href = 'https://www-t01.maxdome-onboard.video/play?customerId=7012341490623787001&orderId=8012341492065131001&hostDomain=https://skidbladnir-t01.maxdome-onboard.de/api/v1/&hostTracking=https://hermud-t01.maxdome-onboard.de/&returnURL=https://www-t01.maxdome-onboard.video/gratis/detail/2372857/';
+            });
+    });
+    
+    document.getElementById('open').addEventListener('click', function () {
+        console.log('Setting window.location...');
+        window.open('https://www-t01.maxdome-onboard.video/play?customerId=7012341490623787001&orderId=8012341492065131001&hostDomain=https://skidbladnir-t01.maxdome-onboard.de/api/v1/&hostTracking=https://hermud-t01.maxdome-onboard.de/&returnURL=https://www-t01.maxdome-onboard.video/gratis/detail/2372857/', "_self");
+    });
+    document.getElementById('open_async').addEventListener('click', function () {
+        var request = window.superagent;
+        request
+            .get('https://reqres.in/api/products/3')
+            .end(function () {
+                console.log('Setting window.location...');
+                window.open('https://www-t01.maxdome-onboard.video/play?customerId=7012341490623787001&orderId=8012341492065131001&hostDomain=https://skidbladnir-t01.maxdome-onboard.de/api/v1/&hostTracking=https://hermud-t01.maxdome-onboard.de/&returnURL=https://www-t01.maxdome-onboard.video/gratis/detail/2372857/', "_self");
+            });
+    });
+
+</script>
+
 </body>
 </html>

@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+<body>
+<h1>Local /delegation page</h1>
+<form>
+<input type="text" id="location" value="https://krin-san.github.io/play"/></br>
+<input type="button" id="button" onclick="setLocation(this.form.location.value)" value="Set window.location"/>
+</form>
+<script>
+function setLocation(location) {
+	window.location = location;
+};
+</script>
+</body>
+</html>
