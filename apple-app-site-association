@@ -4,7 +4,11 @@
         "details": [
             {
                 "appID": "V2MFYEM3KM.de.maxdome.iosclient",
-                "paths": [ "/*" ]
+                "paths": [ "/asset/*" ]
+            },
+            {
+                "appID": "Q6DF56GAFU.de.maxdome.beta",
+                "paths": [ "/asset/*" ]
             },
             {
                 "appID": "V2MFYEM3KM.de.maxdome.onboard",
